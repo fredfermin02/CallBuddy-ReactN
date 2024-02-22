@@ -1,11 +1,12 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
+import Colors from '../Utils/Colors'
 
 export default function Heading({text, isViewAll=false}) {
   return (
     <View style={styles.categoriesContainer} >
       <Text style={styles.heading}>{text}</Text>
-      {isViewAll && <Text>View All</Text> }
+      <TouchableOpacity>{isViewAll && <Text style={styles.viewAll}>View All</Text> }</TouchableOpacity>
     </View>
     
   )
@@ -13,9 +14,10 @@ export default function Heading({text, isViewAll=false}) {
 
 const styles = StyleSheet.create({
     heading:{
-        fontSize:20,
-        fontFamily:'TitilliumWeb',
-        marginBottom:10
+        fontSize:25,
+        fontFamily:'TitilliumWeb-Black',
+        marginBottom:10,
+        color:Colors.SecondaryGold
     },
     categoriesContainer:{
       display:'flex',
@@ -23,5 +25,9 @@ const styles = StyleSheet.create({
       alignItems:'center',
       justifyContent:'space-between',
       padding:10
+    },
+    viewAll:{
+      color:Colors.SecondaryGold,
+      fontFamily:'TitilliumWeb-Italic'
     }
 })

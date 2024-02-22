@@ -15,7 +15,7 @@ export default function Header() {
                 <View>
                     <Text style={{color:Colors.WHITE,fontFamily:'TitilliumWeb'}} >Welcome,</Text>
                     <Text style={{color:Colors.WHITE,
-                    fontSize:20,fontFamily:'TitilliumWeb-Black'}}>Fulano</Text>
+                    fontFamily:'TitilliumWeb-Black',fontSize:20}}>Fulano</Text>
                 </View>
                 
             </View>
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         left:'30%',
         color:Colors.WHITE,
         fontFamily:'TitilliumWeb-Black',
-        fontSize:'20%',
+        fontSize:20,
     },
     smsuLogo:{
         position:'absolute',

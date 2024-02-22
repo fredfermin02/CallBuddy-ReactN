@@ -2,8 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
 import Colors from './App/Utils/Colors';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import TabNavigation from './App/Navigation/TabNavigation';
+
+
+
 
 export default function App() {
   const [fontsLoaded, fontError] = useFonts({
@@ -12,18 +15,26 @@ export default function App() {
     'TitilliumWeb': require('./assets/fonts/TitilliumWeb-Regular.ttf'),
   });
 
+  const MyTheme = {
+    ...DefaultTheme,
+    colors: {
+      background:Colors.PrimaryBrown
+    },
+  };
+
   return (
+    
 
-      <NavigationContainer>
-
-          <TabNavigation/>
+    
+      <NavigationContainer theme={MyTheme}>
+        
+          <TabNavigation />
+        
+          
 
         
       </NavigationContainer>
-
+    
   );
 }
 
-const styles = StyleSheet.create({
-
-});

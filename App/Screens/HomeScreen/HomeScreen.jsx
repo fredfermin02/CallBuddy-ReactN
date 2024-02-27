@@ -1,13 +1,12 @@
 
 import React from 'react'
 import Header from './Components/Header';
-import { View,Text, Image, FlatList, ScrollView } from 'react-native';
+import { View,ScrollView } from 'react-native';
 import Heading from '../../Components/Headings';
-import Colors from '../../Utils/Colors';
+
 import TrendingEventsCarousell from './Components/TrendingEventsCarousell';
 import CategoriesCarousell from './Components/CategoriesCarousell';
 import EventCards from './Components/EventCards';
-
 
             
 export default function HomeScreen() {

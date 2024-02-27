@@ -4,5 +4,8 @@ export default{
     SecondaryGold:'#bcaa71',
     WHITE:'#ffffff',
     LIGHT_GRAY:'#EDEDED',
-    GRAY: '#808080'
+    GRAY: '#808080',
+    TertiaryTeal:'#3c6e6d',
+    TertiaryRust:'#a56021',
+    lightBrown:'#d7cac0'
 }

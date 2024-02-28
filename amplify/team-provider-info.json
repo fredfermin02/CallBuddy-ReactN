@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-calbuddy-staging-172628-authRole",
+      "UnauthRoleArn": "arn:aws:iam::481180369246:role/amplify-calbuddy-staging-172628-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::481180369246:role/amplify-calbuddy-staging-172628-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-calbuddy-staging-172628-deployment",
+      "UnauthRoleName": "amplify-calbuddy-staging-172628-unauthRole",
+      "StackName": "amplify-calbuddy-staging-172628",
+      "StackId": "arn:aws:cloudformation:us-east-1:481180369246:stack/amplify-calbuddy-staging-172628/2ea96c90-d015-11ee-9044-0a8cd4c1143d",
+      "AmplifyAppId": "d3rro7du914dn4"
+    },
+    "categories": {
+      "auth": {
+        "CalBuddy": {}
+      }
+    }
+  }
+}

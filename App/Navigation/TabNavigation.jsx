@@ -16,25 +16,28 @@ export default function TabNavigation() {
         tabBarActiveTintColor:Colors.SecondaryGold,
         tabBarStyle:{backgroundColor:Colors.PrimaryBrown}
         }}>
+
+      <Tab.Screen name="Home" component={HomeScreen} options={{
+                            tabBarLabel:({color})=>(
+                              <Text style={{color:Colors.TertiaryRust,fontSize:12, marginTop:-7}}>Home</Text>
+                            ),
+                            tabBarIcon:({color, size})=>(
+                              <FontAwesome name="home" size={size} color={color} />
+                            )
+                          }} />
+
       <Tab.Screen name="Feed" component={FeedScreen} options={{
                       tabBarLabel:({color})=>(
-                        <Text style={{color:Colors.TertiaryRust,fontSize:12, marginTop:-7}}>Feed Screen</Text>
+                        <Text style={{color:Colors.TertiaryRust,fontSize:12, marginTop:-7}}>Live</Text>
                       ),
                       tabBarIcon:({color, size})=>(
-                        <FontAwesome name="home" size={size} color={color} />
+                        <FontAwesome name="play" size={size} color={color} />
                       )
                     }} />
-      <Tab.Screen name="Home" component={HomeScreen} options={{
-                      tabBarLabel:({color})=>(
-                        <Text style={{color:Colors.TertiaryRust,fontSize:12, marginTop:-7}}>Home</Text>
-                      ),
-                      tabBarIcon:({color, size})=>(
-                        <FontAwesome name="home" size={size} color={color} />
-                      )
-                    }} />
+      
       <Tab.Screen name="Calendar" component={CalendarScreen} options={{
                       tabBarLabel:({color})=>(
-                        <Text style={{color:Colors.TertiaryRust, fontSize:12, marginTop:-7}}>Home</Text>
+                        <Text style={{color:Colors.TertiaryRust, fontSize:12, marginTop:-7}}>Calendar</Text>
                       ),
                       tabBarIcon:({color, size})=>(
                         <FontAwesome name="calendar" size={size} color={color} />

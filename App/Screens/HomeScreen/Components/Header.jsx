@@ -4,6 +4,9 @@ import { FontAwesome } from '@expo/vector-icons';
 import React from 'react'
 import {  } from "../../../../assets/HomeScreen/FrontPage_Header.jpg";
 
+
+
+
 export default function Header() {
   return (
     <View style={styles.container}>
@@ -16,6 +19,7 @@ export default function Header() {
                     <Text style={{color:Colors.WHITE,fontFamily:'TitilliumWeb'}} >Welcome,</Text>
                     <Text style={{color:Colors.WHITE,
                     fontFamily:'TitilliumWeb-Black',fontSize:20}}>Fulano</Text>
+
                 </View>
                 
             </View>

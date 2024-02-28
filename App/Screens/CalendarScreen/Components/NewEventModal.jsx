@@ -17,9 +17,9 @@ export default function NewEventModal({hideModal}) {
     
     return (
 
-    <KeyboardAvoidingView style={{marginTop:70,height:'100%', paddingHorizontal:10, backgroundColor:Colors.SecondaryGold,borderTopLeftRadius:20,borderTopRightRadius:20}}>
+    <KeyboardAvoidingView style={{marginTop:90,height:'100%', paddingHorizontal:10, backgroundColor:Colors.SecondaryGold,borderTopLeftRadius:20,borderTopRightRadius:20}}>
         <ScrollView>
-       
+
             
         {/*Modal back button to retrn to callendar  */}
         <TouchableOpacity style={{display:'flex', flexDirection:'row', gap:10, alignItems:'center', paddingHorizontal:10, paddingTop:10}}

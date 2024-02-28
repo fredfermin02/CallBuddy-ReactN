@@ -50,8 +50,14 @@ const [showModal, setShowModal] = useState(false);
           transparent
           
       >
-      <NewEventModal hideModal={()=>setShowModal(false)}></NewEventModal>
-    </Modal>
+
+  <NewEventModal hideModal={()=>setShowModal(false)}></NewEventModal> 
+</Modal>
+
+
+
+      
+    
 </>
 
 
